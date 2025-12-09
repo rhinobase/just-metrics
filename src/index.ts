@@ -79,7 +79,7 @@ function formatAttributeValue(value: AttributeValue): FormattedAttribute {
 }
 
 function formatAttributes(
-  attributes?: Attributes
+  attributes?: Attributes,
 ): Record<string, FormattedAttribute> | undefined {
   if (!attributes) return undefined;
 
@@ -108,7 +108,7 @@ export function createMetrics(dsn: string): Metrics {
     name: string,
     value: number,
     type: MetricType,
-    options?: MetricOptions
+    options?: MetricOptions,
   ): void {
     const metric: MetricPayload = {
       timestamp: Date.now() / 1000,

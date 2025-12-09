@@ -17,11 +17,28 @@
     "prepare": "is-ci || husky",
     "test": "vitest"
   },
+  "keywords": [
+    "metrics",
+    "sentry",
+    "tracing"
+  ],
+  "homepage": "https://github.com/rhinobase/just-metrics",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhinobase/just-metrics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rhinobase/just-metrics/issues"
+  },
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0",
+    "nano-staged": "^0.9.0",
     "pkgroll": "^2.21.4",
     "typescript": "^5.9.3",
     "vitest": "^4.0.15"
