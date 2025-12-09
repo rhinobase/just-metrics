@@ -1,29 +1,29 @@
 {
-	"name": "metrics",
-	"description": "Metrics for the project",
-	"version": "0.0.1",
-	"type": "module",
-	"main": "dist/index.cjs",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"license": "MIT",
-	"scripts": {
-		"build": "pkgroll --clean-dist",
-		"lint": "biome check .",
-		"format": "biome check --write .",
-		"prepare": "is-ci || husky",
-		"test": "vitest"
-	},
-	"packageManager": "pnpm@10.15.0",
-	"devDependencies": {
-		"@biomejs/biome": "^2.3.8",
-		"husky": "^9.1.7",
-		"is-ci": "^4.1.0",
-		"pkgroll": "^2.21.4",
-		"typescript": "^5.9.3",
-		"vitest": "^4.0.15"
-	}
+  "name": "just-metrics",
+  "description": "Metrics for the project",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "pkgroll --clean-dist --minify",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "prepare": "is-ci || husky",
+    "test": "vitest"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.8",
+    "husky": "^9.1.7",
+    "is-ci": "^4.1.0",
+    "pkgroll": "^2.21.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.15"
+  }
 }
